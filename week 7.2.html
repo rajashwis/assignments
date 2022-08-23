@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "utf-8"/>
+    <meta name = "author" content = "Rajashwi Shrestha"/>
+    <title>Form Layout</title>
+
+</head>
+
+<body>
+
+    <form method = "POST" action = "" name = "search" enctype = "multipart/formdata">
+        <fieldset>
+            <table cellspacing="12">
+
+                <tr>
+                    <td colspan = "3">HTML Form Test</td>
+                </tr>
+
+                <tr>
+                    <td width="30%">Name</td>
+                    <td colspan="2"><input type = "text"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Address</td>
+                    <td colspan="2"><input type = "text"></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td colspan="2"><input type = "text"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td colspan="2">
+                        <input type = "radio" name = "gender" value = "M"/>Male
+                        <input type = "radio" name = "gender" value = "F" checked/>Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobbies</td>
+                    <td colspan="2">
+                        <input type = "checkbox" name = "Sports"/>Sports
+                        <input type = "checkbox" name = "Movies" checked/>Movies
+                        <input type = "checkbox" name = "Travelling"/>Travelling
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Country</td>
+                    <td colspan="2">
+                        <select name = "country" size = "1">
+                            <option value = "--">--Please Choose--</option>
+                            <option value = "np">Nepal</option>
+                            <option value = "us">America</option>
+                            <option value = "in">India</option>
+                            <option value = "otr">Other</option>
+                            </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan = "5">Message</td>
+                    <td colspan="5"><textarea rows = "10" cols = "20" name = "message"></textarea></td>
+                </tr>
+                
+                <tr>
+
+                    <td colspan = "2"><input type="submit" name = "submit" value = "submit"/>
+                    <input type="reset" name = "cancel" value = "cancel"/></td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
